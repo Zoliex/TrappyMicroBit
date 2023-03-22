@@ -60,10 +60,20 @@ radio.onReceivedValue(function (name, value) {
         } else if (name == "AUTO") {
             if (value == 1) {
                 autoMode = 1
+                music.setVolume(40)
+                music.playTone(587, music.beat(BeatFraction.Half))
+                music.playTone(988, music.beat(BeatFraction.Half))
+                maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
+                maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
             } else {
                 autoMode = 0
                 basic.pause(50)
                 maqueen.motorStop(maqueen.Motors.All)
+                music.setVolume(40)
+                music.playTone(587, music.beat(BeatFraction.Half))
+                music.playTone(988, music.beat(BeatFraction.Half))
+                maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
+                maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
             }
         }
     }
@@ -83,9 +93,9 @@ input.onGesture(Gesture.ScreenUp, function () {
 let autoMode = 0
 let actualMode = 0
 let isCar = false
-radio.setGroup(1)
-isCar = maqueen.Ultrasonic(PingUnit.Centimeters) != 500
 if (isCar) {
+    music.setVolume(40)
+    music.playTone(262, music.beat(BeatFraction.Whole))
     basic.showLeds(`
         . . . . .
         . # # # #
@@ -114,18 +124,16 @@ if (isCar) {
         . . . . .
         `)
 }
+radio.setGroup(1)
+isCar = maqueen.Ultrasonic(PingUnit.Centimeters) != 500
 basic.forever(function () {
     if (autoMode) {
         maqueen.motorRun(maqueen.Motors.All, maqueen.Dir.CW, 255)
         if (maqueen.Ultrasonic(PingUnit.Centimeters) < 12) {
-            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOn)
-            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOn)
             while (maqueen.Ultrasonic(PingUnit.Centimeters) < 12) {
                 maqueen.motorRun(maqueen.Motors.M1, maqueen.Dir.CCW, 100)
                 maqueen.motorRun(maqueen.Motors.M2, maqueen.Dir.CW, 100)
             }
-            maqueen.writeLED(maqueen.LED.LEDLeft, maqueen.LEDswitch.turnOff)
-            maqueen.writeLED(maqueen.LED.LEDRight, maqueen.LEDswitch.turnOff)
         }
     }
 })
