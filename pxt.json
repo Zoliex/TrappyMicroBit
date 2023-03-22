@@ -1,5 +1,5 @@
 {
-    "name": "helloworld",
+    "name": "Trappy:Micro:BIT",
     "description": "",
     "dependencies": {
         "core": "*",
@@ -23,5 +23,5 @@
     "supportedTargets": [
         "microbit"
     ],
-    "preferredEditor": "tsprj"
+    "preferredEditor": "blocksprj"
 }
