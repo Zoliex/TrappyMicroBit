@@ -1,5 +1,5 @@
 
-> Ouvrir cette page à [https://zoliex.github.io/helloworld/](https://zoliex.github.io/helloworld/)
+> Ouvrir cette page à [https://zoliex.github.io/helloworld/](https://zoliex.github.io/trappymicrobit/)
 
 ## Utiliser comme extension
 
