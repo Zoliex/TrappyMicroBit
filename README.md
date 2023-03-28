@@ -10,7 +10,7 @@ Ce dépôt peut être ajouté en tant qu'**extension** dans MakeCode.
 * cliquez sur **Extensions** dans le menu engrenage
 * recherchez **https://zoliex.github.io/TrappyMicroBit/** et importez
 
-## Éditer ce projet ![Badge du statut de la compilation](https://github.com/zoliex/helloworld/workflows/MakeCode/badge.svg)
+## Éditer ce projet ![Badge du statut de la compilation](https://github.com/zoliex/TrappyMicroBit/workflows/MakeCode/badge.svg)
 
 Éditer ce dépôt dans MakeCode.
 
