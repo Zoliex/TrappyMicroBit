@@ -1,5 +1,5 @@
 
-> Ouvrir cette page à [https://zoliex.github.io/helloworld/](https://zoliex.github.io/trappymicrobit/)
+> Ouvrir cette page à [https://zoliex.github.io/trappymicrobit/](https://zoliex.github.io/trappymicrobit/]
 
 ## Utiliser comme extension
 
@@ -8,7 +8,7 @@ Ce dépôt peut être ajouté en tant qu'**extension** dans MakeCode.
 * ouvrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * cliquez sur **Nouveau projet**
 * cliquez sur **Extensions** dans le menu engrenage
-* recherchez **https://github.com/zoliex/helloworld** et importez
+* recherchez [https://zoliex.github.io/trappymicrobit/](https://zoliex.github.io/trappymicrobit/] et importez
 
 ## Éditer ce projet ![Badge du statut de la compilation](https://github.com/zoliex/helloworld/workflows/MakeCode/badge.svg)
 
@@ -16,7 +16,7 @@ Ce dépôt peut être ajouté en tant qu'**extension** dans MakeCode.
 
 * ouvrir [https://makecode.microbit.org/](https://makecode.microbit.org/)
 * cliquez sur **Importer** puis cliquez sur **Importer l'URL **
-* collez **https://github.com/zoliex/helloworld** et cliquez sur importer
+* collez [https://zoliex.github.io/trappymicrobit/](https://zoliex.github.io/trappymicrobit/] et cliquez sur importer
 
 ## Aperçu des blocs
 
